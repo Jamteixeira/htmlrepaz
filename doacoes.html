@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Doações</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel = "stylesheet" href="menu.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    
+.pag {
+
+height: 500px;
+ width: 300px;
+ margin: 20px;
+ padding: 15px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+
+
+}
+
+
+
+input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+  </style>
+
+  
+<script>
+    function verificar() {
+        var nomeDoa = document.getElementById("nome").value;
+        var endDoa = document.getElementById("endereço").value;
+        var emailDoa = document.getElementById("email").value;
+        if (emailDoa.indexOf("@") < 0) {
+            return false;
+        }
+            var telDoa = document.getElementById("telefone").value;
+
+        var telefoneRegex = 1-9;
+        if (!telefoneRegex.test(telDoa)) {
+            return false;
+        }
+        
+        var tipoValor = document.getElementById("txtValorD").value;
+
+        var tipoDoa = document.getElementById("tipo-pagamento").value;
+
+
+      
+       
+        
+
+        document.form1.submit();
+    }
+</script>
+
+</head>
+
+<body>
+
+    <nav id="menu">
+        <ul>
+            <h1> REPAZ </h1> 
+            <h4> Associação Espírita Recanto da Paz Francisco de Assis </h4>
+            <hr>
+
+            <img src="logorepazsemfundo.png" width="200" height="180"/>
+            <hr>
+            
+            <li> <a href="Menu de HTML.html"> Quem somos                    </a>   </li>
+            <li> <a href="atividades.html"> Atividades                      </a>   </li>
+            <li> <a href="doacoes.html"> Doações                            </a>   </li>
+            <li> <a href="cursos.html"> Cursos                              </a>   </li>
+            <li> <a href="criticasesugestoes.html"> Críticas e sugestões  </a>   </li>
+
+        </ul>
+    </nav>
+
+
+
+        <div class="doacoestexto">
+          Com a sua ajuda, podemos fazer a diferença e tornar o mundo um lugar melhor para todos.<br>
+         Sua generosidade faz com que nossos projetos sejam possíveis. Doe hoje e junte-se a nós na construção de um futuro mais brilhante.</h2>
+         <img src="Caridade.jpg"  width="1000" height="500">
+
+       
+        </div>
+        
+
+
+    <div class="pag">
+
+        <form name="form1" method="post" action="grava do Repaz doacoes.jsp">
+           
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="txtNome" required>
+        
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="txtEndereco" required>
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="txtEmail" required>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="txtTelefone" pattern="[0-9]+" maxlength="11" required>
+
+           <label> <for="donationAmount"> Digite o valor da doação:</label>
+        <form name="form2" method="post" action="grava do Repaz.jsp">
+        <input type="number" id="donationAmount" name="txtValorD" placeholder="Digite o valor em R$" required>
+            
+            <br>
+            <br>
+    
+            <label for="tipo-pagamento">Tipo de Pagamento:</label>
+            <br>
+            <select id="tipo-pagamento" name="tipo-pagamento" required>
+                <option value="" disabled selected>Selecione um metodo </option>
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="boleto">Boleto Bancário</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+    
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    
+
+      <h2> Para doações de outros materiais, entre em contato atráves do espaço abaixo descrevendo sua doação</h2>
+      <form method="post" action="grava do Repaz.jsp">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="txtMensagem" rows="4" cols="50"> </textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+    
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="container">
+            <div class="fale-conosco">
+                <h2>Instituição</h2>
+                <ul>
+                     <li><a href="#"> Fale conosco </a></li>
+                     <br>
+                    <li><a href="#"> Nossos Serviços </a></li>
+                    <br>
+                    <li><a href="#"> Política de Privacidade </a></li>
+                    <br>
+            </div>
+                    <div class="redes-sociais">
+                    <h2> Redes Sociais </h2>
+                    
+                    <a href="https://www.facebook.com/centro.espirita.RePaz"> 
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a> 
+                    <a href="https://instagram.com/centroespiritarepaz?igshid=MzRlODBiNWFlZA==">
+                    
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    
+                    </a>
+                    </div>
+                     
+                    <div class="localizacao">
+                        <h2>Localização</h2>
+                 <address>Localização: Rua Dr Pedro de Castro Rocha 133, São Manuel Santos - SP</address>
+                   
+                <br>
+                <br>
+                <br>
+                <br>
+                copyright © 2023
+                </div>
+
+</html>

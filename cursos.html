@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel = "stylesheet" href="menu.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h2 {
+            color: #333;
+        }
+
+        form {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        
+
+            
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #value {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+       #value:hover {
+            background-color: #45a049;
+        }
+          
+        
+    </style>
+   <script>
+    function verificar(){
+        var n = document.getElementById("nome").value;
+    
+        var e = document.getElementById("email").value;
+        if (e.indexof("@")< 0){
+        
+            return false;
+        }
+
+        var c = document.getElementById("curso").value;
+        
+       
+        
+        
+        document.form1.submit();
+
+    }
+   </script>
+
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <h1> REPAZ </h1> 
+            <h4> Associação Espírita Recanto da Paz Francisco de Assis </h4>
+            <hr>
+            
+            <img src="logorepazsemfundo.png" width="200" height="180"/>
+            <hr>
+            
+            
+            <li> <a href= "Menu de HTML.html"> Quem Somos                   </a>   </li>
+            <li> <a href= "atividades.html"> Atividades                     </a>   </li>
+            <li> <a href="doacoes.html"> Doações                            </a>   </li>
+            <li> <a href="cursos.html"> Cursos                              </a>   </li>
+            <li> <a href="criticasesugestoes.html"> Críticas e Sugestões  </a>   </li>
+        </ul>
+    </nav>
+    <br>
+    <table border="1" width="200px" class="corTabela"> 
+          <tr>
+               <td align="center"><h3>Cursos</h3></td>
+               
+          </tr>
+              <tr>
+                  <td align="center">Automação Industrial</td>
+                     <tr>
+                  <td align="center">Artesanato</td>
+                    </tr>
+                    <tr>
+                  <td align="center">Panificação</td>
+                   </tr>
+                <tr>
+                   <td align="center">Confeitaria</td>
+                </tr>
+                <tr>
+                    <td align="center">Barbearia</td>
+                </tr>
+                <tr>
+                    <td align="center">Cabeleireiro</td>
+                </tr>
+                <tr>
+                    <td align="center">Manicure e Pedicure</td>
+                </tr>
+                <tr>
+                    <td align="center">Inglês</td>
+                    <tr>
+                        <td align="center">Inclusão Digital</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Linguagem Cinematográfica e Teatral</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Elétrica Residencial</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Comandos Elétricos</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Manutenção de Computadores</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Dança de Rua</td>
+                    </tr>
+                </tr>
+             </tr>
+   </table>
+   
+
+   <h2>Formulário de Inscrição em Cursos</h2>
+
+   <form name="form1" method="post" action="grava do Repaz cursos.jsp">
+      
+       <label for="nome">Nome:</label>
+       <input type="text" id="nome" name="nome" required>
+
+    
+       <label for="email">E-mail:</label>
+       <input type="email" id="email" name="email" required>
+
+       
+       <label for="curso">Curso Desejado:</label>
+       <select id="curso" name="curso" required>
+           <option value="" disabled selected>Selecione um curso           </option>
+           <option value="curso1">Automação Industrial                  </option>
+           <option value="curso2">Artesanato                            </option>
+           <option value="curso3">Panificação                           </option>
+           <option value="curso4">Confeitaria                           </option>
+           <option value="curso5">Barbearia                             </option>
+           <option value="curso6">Cabeleireiro                          </option>
+           <option value="curso7">Manicure e Pedicure                   </option>
+           <option value="curso8">Inglês                                </option>
+           <option value="curso9"> Inclusão Digital                     </option>
+           <option value="curso10"> Linguagem Cinematográfica e Teatral </option>
+           <option value="curso11">Elétrica Residencial                 </option>
+           <option value="curso12">Comandos Elétricos                   </option>
+           <option value="curso13">Manutenção de Computadores           </option>
+           <option value="curso14">Dança de Rua                         </option>
+    </select>
+
+    
+      <input type="submit" value="Enviar Inscrição" id="value" onclick="verificar()">
+      
+   </form>
+  
+</body>
+</html>
+
+
+<nav>
+    <footer class="footer">
+        <div class="container">
+                <div class="fale-conosco">
+                    <h2>Instituição</h2>
+                    <ul>
+                         <li><a href="#"> Fale conosco </a></li>
+                         <br>
+                        <li><a href="#"> Nossos Serviços </a></li>
+                        <br>
+                        <li><a href="#"> Política de Privacidade </a></li>
+                        <br>
+                </div>
+                        <div class="redes-sociais">
+                        <h2> Redes Sociais </h2>
+                        
+                        <a href="https://www.facebook.com/centro.espirita.RePaz"> 
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a> 
+                        <a href="https://instagram.com/centroespiritarepaz?igshid=MzRlODBiNWFlZA==">
+                        
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        
+                        </a>
+                        </div>
+                         
+                        <div class="localizacao">
+                            <h2>Localização</h2>
+                     <address>Localização: Rua Dr Pedro de Castro Rocha 133, São Manuel Santos - SP</address>
+                       
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    copyright © 2023
+                    </ul>
+                 
+               
+        </div>
+    </footer>
+</nav>
+       
+  </body>
+   
+   
+</html>
